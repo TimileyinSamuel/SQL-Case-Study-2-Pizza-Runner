@@ -460,57 +460,5 @@ GROUP BY r.runner_id)
 
 
 
-########################################################### PART 2 BEGINS ####################################################################
-
-##################################################### C. INGREDIENT OPTIMIZATION ##############################################################
-### What are the standard ingredients for each pizza?
-SELECT pn.pizza_name, GROUP_CONCAT(pt.topping_name) AS ingredients
-FROM pizza_names pn
-LEFT JOIN pizza_recipes pr
-USING (pizza_id)
-LEFT JOIN pizza_toppings pt
-ON pr.toppings = pt.topping_id
-GROUP BY pn.pizza_name;
-
-
-SELECT 
-	SUBSTRING_INDEX(toppings, ',', 1),
-    SUBSTRING_INDEX(toppings, ',', 2),
-    SUBSTRING_INDEX(toppings, ',', 3)
-FROM pizza_recipes;
-
-
-### What was the most commonly added extra?
-SELECT extras, COUNT(extras)
-FROM customer_orders
-WHERE extras IS NOT NULL
-GROUP BY extras;
-
-
-WITH union_table AS (
-	SELECT SUBSTRING_INDEX(extras, ',', 1) AS extra
-	FROM customer_orders
-	WHERE extras IS NOT NULL
-	UNION ALL
-	SELECT SUBSTRING_INDEX(extras, ',', -1) AS extra
-	FROM customer_orders
-	WHERE extras IS NOT NULL)
-		SELECT extra, COUNT(*)
-        FROM union_table
-        GROUP BY extra;
-
-SELECT SUBSTRING_INDEX(extras, ',', 1) AS extra
-	FROM customer_orders;
-	UNION ALL
-	SELECT SUBSTRING_INDEX(extras, ',', -1) AS extra
-	FROM customer_orders
-	WHERE extras IS NOT NULL;
-
-### What was the most common exclusion?
-
-
-
-
-
-
+########################################################### END ####################################################################
 
