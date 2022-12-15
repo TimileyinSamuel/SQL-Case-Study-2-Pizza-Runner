@@ -20,6 +20,7 @@ All datasets exist within the pizza_runner database schema - be sure to include 
 CASE STUDY QUESTIONS
 
 A. PIZZA METRICS
+
 How many pizzas were ordered?
 
 How many unique customer orders were made?
