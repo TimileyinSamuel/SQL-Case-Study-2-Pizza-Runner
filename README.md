@@ -1,6 +1,7 @@
 # SQL-Case-Study-2-Pizza-Runner
 
-Introduction
+INTRODUCTION
+
 
 Did you know that over 115 million kilograms of pizza is consumed daily worldwide??? (Well according to Wikipedia anyway…)
 
@@ -19,7 +20,9 @@ All datasets exist within the pizza_runner database schema - be sure to include 
 
 CASE STUDY QUESTIONS
 
+
 A. PIZZA METRICS
+
 
 How many pizzas were ordered?
 
@@ -43,6 +46,7 @@ What was the volume of orders for each day of the week?
 
 
 B. RUNNER AND CUSTOMER EXPERIENCE
+
 
 How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 
