@@ -17,8 +17,9 @@ He has prepared for us an entity relationship diagram of his database design but
 
 All datasets exist within the pizza_runner database schema - be sure to include this reference within your SQL scripts as you start exploring the data and answering the case study questions.
 
-Case Study Questions
-A. Pizza Metrics
+CASE STUDY QUESTIONS
+
+A. PIZZA METRICS
 How many pizzas were ordered?
 
 How many unique customer orders were made?
@@ -40,7 +41,8 @@ What was the total volume of pizzas ordered for each hour of the day?
 What was the volume of orders for each day of the week?
 
 
-B. Runner and Customer Experience
+B. RUNNER AND CUSTOMER EXPERIENCE
+
 How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 
 What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
